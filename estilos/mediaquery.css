@@ -8,12 +8,16 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
+    body {/*tablet*/
         background-image: linear-gradient(to top, var(--cor2), var(--cor3), var(--cor1));
+    }
+    div#form {
+        text-align: center;
     }
 
     section#login {
         width: 80vw;
+        height: 250px;
     }   
     section#login > div#imagem {
         float: left;
@@ -24,15 +28,21 @@
         float: right;
         width: 70%;
     }
+    
 }
 
 @media screen and (min-width: 992px) {
-    body {
+    body { /*desktop*/
         background-image: linear-gradient(to top, var(--cor2), var(--cor3), var(--cor1));
+    }
+
+    div#form {
+        text-align: center;
     }
 
     section#login {
         width: 950px;
+        height: 350px;
     }
 
     section#login > div#imagem {
@@ -44,5 +54,13 @@
     section#login > div#form {
         float:right;
         width: 50%;
+    }
+
+    div#form > h1 {
+        font-size: 2em;
+    }
+
+    div#form > p {
+        font-size: 1em;
     }
 }

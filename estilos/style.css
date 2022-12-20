@@ -60,13 +60,37 @@ form > div.campo {
     background-color: #5f2c82;
     width: 100%;
     display: block;
-    height: 40px;
-    border-radius: 5px;
+    height: 35px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    padding: 5px;
+    width: 40px;
+    margin-right: 2px;
+}
+
+div.campo > input {
+    background-color: var(--cor2);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-9px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: 0px;
 }
 
 form > input[type=submit] {
@@ -96,6 +120,7 @@ form > a.botao {
     border: 1px solid var(--cor1);
     border-radius: 5px;
     margin-top: 5px;
+    padding-top: 5px;
 }
 
 form > a.botao > i {
